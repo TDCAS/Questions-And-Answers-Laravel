@@ -8,15 +8,22 @@ use Redirect;
 class UsuariosController extends Controller
 { 
     public function searchQuestions() {
+    
         $qaa = QuestionsAndAnswers::get();
-
-        return view('usuarios.list', ['qaa' => $qaa]);
+    
+ 
+        return view('usuarios.listquestion', ['qaa' => $qaa]);
 }
 
     public function searchAnswers() {
         $qaa = QuestionsAndAnswers::get();
 
-        return view('usuarios.response', ['qaa' => $qaa]);
+        return view('usuarios.response' );
     }
+
+
+ 
+
+    
 
 }

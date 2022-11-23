@@ -20,7 +20,11 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-Route::get('/usuarios', [App\Http\Controllers\UsuariosController::class, 'searchQuestions']);
+Route::get("usuarios", [App\Http\Controllers\UsuariosController::class, 'searchQuestions']);
 
-Route::get('usuarios/respostadousuario', [App\Http\Controllers\UsuariosController::class, 'searchAnswers']);
+Route::get("/listquestion", [App\Http\Controllers\UsuariosController::class, 'searchQuestions']);
+
+Route::get("/respostadousuario", [App\Http\Controllers\UsuariosController::class, 'searchQuestions']);
+
+Route::get("/question", [App\Http\Controllers\UsuariosController::class, 'searchQuestions']);
 

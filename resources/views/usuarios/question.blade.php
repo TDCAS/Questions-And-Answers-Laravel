@@ -18,9 +18,15 @@
                     
                     
                     <h1>Pergunta  </h1>
-                    <h1>{{$id}}</h1>
-                    <p class="perguntatitulo"></p>
- 
+
+                    <p class="perguntatitulo">{{$qaa[2]->questions}}</p>
+                    
+                    <form action="{{ url('usuarios/respostadousuario')}}" method=get>
+                    <label class="inputs">TRUE <input type="radio" name="value"></label>
+                    <label class="inp+*-uts">FALSE<input type="radio" name="value2"> </label>
+                      <button class="but" type="submit"> Enviar resposta </button>
+
+                    </form>
                     
 
 

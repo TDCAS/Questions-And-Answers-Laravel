@@ -1,6 +1,19 @@
 @extends('layouts.app')
 
 @section('content')
+
+
+<head>
+
+    <style>
+        .ancoralist{
+            color:black;
+            text-decoration:none;
+            
+        }
+
+    </style>
+</head>
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
@@ -15,25 +28,25 @@
                     @endif
 
                 
-                    
-                    
-                    <h1>Pergunta  </h1>
-
-                    <p class="perguntatitulo">{{$qaa[Helper::shout($qaa)]->questions}}</p>
-                    
-                    <form action="{{ url('usuarios/respostadousuario')}}" method=get>
-                    <label class="inputs">TRUE <input type="radio" name="value"></label>
-                    <label class="inp+*-uts">FALSE<input type="radio" name="value2"> </label>
-                      <button class="but" type="submit"> Enviar resposta </button>
-
-                    </form>
-                    
-
-
-                 
+             
+                    @foreach($qaa as $u)
+                    <h1>Pergunta {{$u->id}}</h1>
             
+                    <a href="/respostadousuario$qaa[3]" class="ancoralist"> <h3>{{$u->questions}}</h3></a>
+
+
+               
+                    @endforeach
 
                     
+
+
+                    
+                    
+         
+                    <p class="perguntatitulo"></p>
+                    
+
                 </div>
             </div>
         </div>

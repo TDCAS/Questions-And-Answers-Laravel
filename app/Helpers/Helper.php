@@ -4,10 +4,15 @@ namespace App\Helpers;
 use App\Models\QuestionsAndAnswers;
 class Helper
 {
-    public static function shout($valor)
+    public static function randomvalue($value)
     {
-        $contador = count($valor)  - 1 ;
+        $cont = count($value)  - 1 ;
         
-        return rand(0,$contador);
+        return rand(0,$cont);
     }
+
+        public static function savevalue($value)
+        {
+            
+        }
 }
