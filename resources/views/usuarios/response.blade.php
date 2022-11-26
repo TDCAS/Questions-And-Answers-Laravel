@@ -5,8 +5,8 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header"><h1 class="tituloposlogin">Home</h1></div>
-                
+                <div class="card-header oloko"><h1 class="perguntatitulo">{{ __('Pergunta') }}</h1></div>
+
                 <div class="card-body">
                     @if (session('status'))
                         <div class="alert alert-success" role="alert">
@@ -14,15 +14,20 @@
                         </div>
                     @endif
 
-                    <h3>Escolha uma das opções a baixo</h3>
+                
+                    
+                    
+                    <h1>Pergunta  </h1>
+                    <h1>{{$id}}</h1>
+                    <p class="perguntatitulo"></p>
+ 
+                    
 
-                    <a href="{{'/listquestion'}}"> <h5>Listar questões para responder</h5></a>
 
-                    <a href="{{'/question'}}"> <h5>Criar pergunta</h5> </a>
+                 
+            
 
-                    <a href="{{'usuarios'}}" class="ancora">Comercar desafio de perguntas e respostas</a>
-
-
+                    
                 </div>
             </div>
         </div>
