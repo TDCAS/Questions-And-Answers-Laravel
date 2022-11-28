@@ -16,15 +16,17 @@ class UsuariosController extends Controller
 }
 
     public function searchAnswers(string $id) {
-        $consultq = QuestionsAndAnswers::from('tb_questions')->where('pk_idquestions' , $id)->value('questions');
+        $consultq = QuestionsAndAnswers::from('tb_questions')->where('pk_idquestions', $id)->value('questions');
 
         
-        $consulta = QuestionsAndAnswers::select('*')->from('tb_answers')->where('pk_idquestions' , $id)->get();
+        $consulta = QuestionsAndAnswers::select('answers','pk_idanswers')->from('tb_answers')->get();
   
         $consultname  = QuestionsAndAnswers::select('name')->from('users')->get();
         
+       
 
-        return view('usuarios.response', ['consulta' => $consulta,'consultq' => $consultq,'id' => $id, 'consultname' => $consultname]);
+
+        return view('usuarios.response', ['consulta' => $consulta,'consultq' => $consultq,'id' => $id ,'consultname' => $consultname]);
 
 
     }

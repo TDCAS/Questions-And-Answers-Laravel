@@ -14,24 +14,15 @@
                         </div>
                     @endif
 
-                    <h1>Pergunta</h1>
-                    
-                    {{$consultname}}
-
-                    @foreach($consultname as $a)
-                    {{$a->name}};
-                    @endforeach
-                    <h2>{{$consultq}}</h2>
-                    {{$consulta }}
+                    <h1>Pergunta</h1>                    
+                    <h3>{{$consultq}}</h3>
+                    <h1>Respostas</h1>
                     @foreach($consulta as $u)
-                    
-                    <h2>Respostas </h2>
+
+                    <h2>Respostas anonima {{$u->pk_idanswers}}</h2>
                     <h3>{{$u->answers}}</h3>
-
-
-               
                     @endforeach
-                 
+                   
             
 
                     

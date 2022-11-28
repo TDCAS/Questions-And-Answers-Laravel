@@ -30,7 +30,7 @@
                 
              
                     @foreach($qaa as $u)
-                    <h1>Pergunta {{$u->pk_idquestionsandanswers}}</h1>
+                    <h1>Pergunta {{$u->pk_idquestions}}</h1>
             
                     <a href="/response{{$u->pk_idquestions}}" class="ancoralist"> <h3>{{$u->questions}}</h3></a>
 

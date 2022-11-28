@@ -16,17 +16,18 @@ return new class extends Migration
         Schema::create('tb_questions', function (Blueprint $table) {
             $table->id('pk_idquestions');
             $table->string('questions', 600);
-            $table->unsignedBigInteger('pk_idusers');
-            $table->foreign('pk_idusers')->references('id')->on('users')->onDelete('cascade');
-
+            $table->unsignedBigInteger('fk_idusers');
+            $table->foreign('fk_idusers')->references('id')->on('users')->onDelete('cascade');
             $table->timestamps();
         });
 
         Schema::create('tb_answers', function (Blueprint $table) {
             $table->id('pk_idanswers');
             $table->string('answers', 600);
-            $table->unsignedBigInteger('pk_idusers');
-            $table->foreign('pk_idusers')->references('id')->on('users')->onDelete('cascade');
+            $table->unsignedBigInteger('fk_idquestions');
+            $table->foreign('fk_idquestions')->references('pk_idquestions')->on('tb_questions')->onDelete('cascade');
+            $table->unsignedBigInteger('fk_idusers');
+            $table->foreign('fk_idusers')->references('id')->on('users')->onDelete('cascade');
             $table->timestamps();
         });
     }
