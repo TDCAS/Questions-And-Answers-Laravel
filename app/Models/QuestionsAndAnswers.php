@@ -7,6 +7,10 @@ use Illuminate\Database\Eloquent\Model;
 
 class QuestionsAndAnswers extends Model
 {
+    protected $table = 'tb_questionsandanswers';
+     
     protected $fillable = ['questions','answer'];
+
+
 
 }

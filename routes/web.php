@@ -28,3 +28,5 @@ Route::get("/respostadousuario", [App\Http\Controllers\UsuariosController::class
 
 Route::get("/question", [App\Http\Controllers\UsuariosController::class, 'searchQuestions']);
 
+Route::get('/response{id}', [App\Http\Controllers\UsuariosController::class, 'searchAnswers']);
+

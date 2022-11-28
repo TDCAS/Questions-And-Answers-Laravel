@@ -11,8 +11,8 @@ class Helper
         return rand(0,$cont);
     }
 
-        public static function savevalue($value)
-        {
-            
-        }
+    public static function contname($value){
+
+    }
+
 }

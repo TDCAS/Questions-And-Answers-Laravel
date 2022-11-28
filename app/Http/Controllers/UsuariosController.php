@@ -15,11 +15,22 @@ class UsuariosController extends Controller
         return view('usuarios.listquestion', ['qaa' => $qaa]);
 }
 
-    public function searchAnswers() {
-        $qaa = QuestionsAndAnswers::get();
+    public function searchAnswers(string $id) {
+        $consultq = QuestionsAndAnswers::from('questionsandanswers')->where('pk_idquestionsandanswers' , $id)->value('questions');
 
-        return view('usuarios.response' );
+        
+        $consulta = QuestionsAndAnswers::select('*')->from('tb_answers')->where('pk_idquestions' , $id)->get();
+  
+        $consultname  = QuestionsAndAnswers::select('name')->from('users')->get();
+        
+
+        return view('usuarios.response', ['consulta' => $consulta,'consultq' => $consultq,'id' => $id, 'consultname' => $consultname]);
+
+
     }
+
+    
+
 
 
  

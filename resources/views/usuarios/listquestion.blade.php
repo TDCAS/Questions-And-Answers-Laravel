@@ -30,9 +30,9 @@
                 
              
                     @foreach($qaa as $u)
-                    <h1>Pergunta {{$u->id}}</h1>
+                    <h1>Pergunta {{$u->pk_idquestionsandanswers}}</h1>
             
-                    <a href="/respostadousuario$qaa[3]" class="ancoralist"> <h3>{{$u->questions}}</h3></a>
+                    <a href="/response{{$u->pk_idquestions}}" class="ancoralist"> <h3>{{$u->questions}}</h3></a>
 
 
                
