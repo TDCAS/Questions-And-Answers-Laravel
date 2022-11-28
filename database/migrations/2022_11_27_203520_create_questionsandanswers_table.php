@@ -17,6 +17,7 @@ return new class extends Migration
             $table->id('pk_idquestions');
             $table->string('questions', 600);
             $table->unsignedBigInteger('fk_idusers');
+            $table->boolean('private');
             $table->foreign('fk_idusers')->references('id')->on('users')->onDelete('cascade');
             $table->timestamps();
         });
