@@ -17,7 +17,7 @@ return new class extends Migration
             $table->id('pk_idquestions');
             $table->string('questions', 600);
             $table->unsignedBigInteger('pk_idusers');
-            $table->foreign('pk_idusers')->references('pk_idusers')->on('tb_users')->onDelete('cascade');
+            $table->foreign('pk_idusers')->references('id')->on('users')->onDelete('cascade');
 
             $table->timestamps();
         });
@@ -26,7 +26,7 @@ return new class extends Migration
             $table->id('pk_idanswers');
             $table->string('answers', 600);
             $table->unsignedBigInteger('pk_idusers');
-            $table->foreign('pk_idusers')->references('pk_idusers')->on('tb_users')->onDelete('cascade');
+            $table->foreign('pk_idusers')->references('id')->on('users')->onDelete('cascade');
             $table->timestamps();
         });
     }

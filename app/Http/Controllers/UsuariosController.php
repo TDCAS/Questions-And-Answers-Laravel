@@ -16,7 +16,7 @@ class UsuariosController extends Controller
 }
 
     public function searchAnswers(string $id) {
-        $consultq = QuestionsAndAnswers::from('questionsandanswers')->where('pk_idquestionsandanswers' , $id)->value('questions');
+        $consultq = QuestionsAndAnswers::from('tb_questions')->where('pk_idquestions' , $id)->value('questions');
 
         
         $consulta = QuestionsAndAnswers::select('*')->from('tb_answers')->where('pk_idquestions' , $id)->get();
