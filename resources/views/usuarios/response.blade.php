@@ -23,6 +23,7 @@
                     <h3>{{$u->answers}}</h3>
                     @endforeach
                    
+                    <a href='/createresponse'> Cria uma resposta para pergunta </a>
             
 
                     

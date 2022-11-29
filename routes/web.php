@@ -26,7 +26,10 @@ Route::get("/listquestion", [App\Http\Controllers\UsuariosController::class, 'se
 
 Route::get("/respostadousuario", [App\Http\Controllers\UsuariosController::class, 'searchQuestions']);
 
-Route::get("/question", [App\Http\Controllers\UsuariosController::class, 'searchQuestions']);
+Route::get("/newQuestions", [App\Http\Controllers\UsuariosController::class, 'newQuestions']);
 
 Route::get('/response{id}', [App\Http\Controllers\UsuariosController::class, 'searchAnswers']);
 
+Route::post('usuarios/createquestions',[App\Http\Controllers\UsuariosController::class, 'createquestions']);
+
+Route::get('/createresponse', [App\Http\Controllers\UsuariosController::class, 'newResponse' ]);
