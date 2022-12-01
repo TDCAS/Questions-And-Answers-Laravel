@@ -5,7 +5,7 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header oloko"><h1 class="perguntatitulo">{{ __('Pergunta') }}</h1></div>
+                <div class="card-header oloko"><h1 class="perguntatitulo">{{ __('Site de perguntas e resposta') }}</h1></div>
 
                 <div class="card-body">
                     @if (session('status'))

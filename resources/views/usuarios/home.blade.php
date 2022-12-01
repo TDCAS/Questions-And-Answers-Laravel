@@ -16,11 +16,11 @@
 
                     <h3>Escolha uma das opções a baixo</h3>
 
-                    <a href="{{'/listquestion'}}"> <h5>Listar questões para responder</h5></a>
+                    <a href="{{'/listquestion'}}" class="ancora"> <h5>* Listar questões para responder</h5></a>
 
-                    <a href="{{'/newQuestions'}}"> <h5>Criar pergunta</h5> </a>
+                    <a href="{{'/newQuestions'}}" class="ancora"> <h5>* Criar pergunta</h5> </a>
 
-                    <a href="{{'usuarios'}}" class="ancora">Comercar desafio de perguntas e respostas</a>
+                    
 
 
                 </div>

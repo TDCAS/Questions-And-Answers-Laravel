@@ -30,6 +30,8 @@ Route::get("/newQuestions", [App\Http\Controllers\UsuariosController::class, 'ne
 
 Route::get('/response{id}', [App\Http\Controllers\UsuariosController::class, 'searchAnswers']);
 
-Route::post('usuarios/createquestions',[App\Http\Controllers\UsuariosController::class, 'createquestions']);
+Route::post('usuarios/createquestions',[App\Http\Controllers\UsuariosController::class, 'createQuestions']);
 
-Route::get('/createresponse', [App\Http\Controllers\UsuariosController::class, 'newResponse' ]);
+Route::get('/createresponse{id}', [App\Http\Controllers\UsuariosController::class, 'newResponse' ]);
+
+Route::post('/createresponse/confirm', [App\Http\Controllers\UsuariosController::class, 'createResponse']);
