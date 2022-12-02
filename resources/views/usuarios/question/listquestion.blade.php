@@ -32,11 +32,12 @@
                     $u = seria cada linha da tabela 
                     
                 -->
+                   
                     @foreach($tbQuestions as $u)
                   
                     <!--verifica se o a coluna(private) da tabela (tb_questions) e 0 se for ele motra a questão se não nao mostra nada -->
                         @if ($u->private == 0)
-                            <h1>Pergunta {{$u->pk_idquestions}}</h1>
+                            <h1>Pergunta {{Helper::consultId($u->fk_idusers)}}</h1>
                             
                             <a href="/response{{$u->pk_idquestions}}" class="ancoralist"> <h3>{{$u->questions}}</h3></a>
                         @endif

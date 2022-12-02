@@ -10,6 +10,8 @@ use Illuminate\Http\Request;
 
 use App\Models\Tb_answers;
 
+use App\Models\User;
+
 //usando objeto que rediresiona para as view 
 use Redirect;
 //Controla as rotas e injeta dados nas mesmas
@@ -26,6 +28,8 @@ class UsuariosController extends Controller
 
 ///route createresponse{id} chama newResponse passado um id e redirecionado  para 'usuarios.answers.createresponse' injetando variavel id
     public function newResponse($id){
+        
+
         return view('usuarios.answers.createresponse' , ['id' => $id]);
     }
 
@@ -33,6 +37,8 @@ class UsuariosController extends Controller
     public function searchQuestions() {
         // busca tb_questao, usando get
         $tbQuestions = Tb_questions::get();
+
+        
 
         
         // direciona para view listquestion.blade.php e injeta a tb_questao nela 

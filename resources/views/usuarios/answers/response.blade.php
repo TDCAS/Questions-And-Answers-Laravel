@@ -26,7 +26,7 @@
                 --> 
                     @foreach($AnswersandPk_idanswers as $u)
                     
-                    <h2>Respostas anonima {{$u->answers}}</h2>
+                    <h2>Respostas anonima {{Helper::consultId(1)}}</h2>
                     
                     <h3>{{$u->answers}}</h3>
                     @endforeach

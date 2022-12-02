@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class Tb_answers extends Model
 {
   //Cria uma variavel que guarda colunas especificas dentro delas
-  protected $fillable = ['answers','fk_idquestions'];
+  protected $fillable = ['answers','fk_idquestions','fk_idusers'];
 
 
 }

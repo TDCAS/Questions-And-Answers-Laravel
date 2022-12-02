@@ -27,6 +27,7 @@
 
                     
                     <input type="hidden" name='fk_idquestions' value='{{$id}}'>
+                    <input type="hidden" name="fk_idusers" value={{Auth::user()->id}}>
                     <button  type="submit"> Enviar resposta </button>
 
                     </form>
