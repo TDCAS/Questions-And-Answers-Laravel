@@ -16,4 +16,4 @@ FIm
 	Chegando aqui eu travei numa parte, sentia que eu precisava estruturar melhor o banco para poder ter uma clareza na hora que fosse fazer as query no php resolvi refazer o banco com um  diagrama EER  que me deu uma ampla clareza, após isso foi de vento em popa eu queria add algo eu conseguia  tranquilamente,  mas ainda sim não ficou um clean code, pois eu acho que o controle além de direcionar as view e injetar os dados ficou com a parte de query, que acho que era o papel de outra classe, que teorizo que seja às factory ou  seeds , até poderia correr atrás para aprender mas isso demoraria mais tempo virando assim um mês.
 
 
-![](Peek 02-12-2022 00-32.gif)
+![](Peek.gif)
