@@ -33,16 +33,16 @@ São 3 Modelos:
 entender o fremowork no começo foi meio embaraçoso mas com um documentação muito delicinha e
 videos no youtube consegui fazer esse dasafio em 3 semanas.
 
-Como eu usei linux pq meu windows deu pau e eu não tinha tempo para bootar um pendrive windows
+  Usei linux porque meu windows parou de funcionar e eu não tinha tempo para bootar um pendrive windows.
 
-Me ajudou muito esse video 
+  Me ajudou muito esse video 
 https://www.youtube.com/watch?v=TKH4S4_d9PA&t=2108s
 
-junto com a documentação do laravel BEM intuitivo e alguns stack overflow e claro.
+  junto com a documentação do laravel BEM intuitivo e alguns stack overflow e claro.
 https://laravel.com/
 
 
-Descrição do que foi feito no projeto
+# Descrição do que foi feito no projeto
 
 De começo tenho que falar que nunca mexi com laravel mas já tive experiências com php, 
 html  e css. passei um pouco de trabalho para entender como funciona mas no final deu tudo certo 
