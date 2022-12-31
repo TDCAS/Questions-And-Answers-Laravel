@@ -74,3 +74,6 @@ poderia correr atrás para aprender mas isso demoraria mais tempo virando assim 
 
 ## Gif mostrando como ficou.
 ![](Peek.gif)
+
+Projeto feito em 4 semanas (Especifica que eu nunca tinha mexido com laravel)
+Orgulhoso por isso!!
