@@ -62,7 +62,7 @@ router e da router para controller onde fazia contato com o banco, tive uma difi
 entender a view por que era em blade.php  que é  um tipo de Framework front-end para php mas
 seguindo conforme os dias, fui entendendo os “blocos” e @ no php.
 
-## FIm 
+## Fim 
 
 - Chegando aqui eu travei numa parte, sentia que eu precisava estruturar melhor o banco
 para poder ter uma clareza na hora que fosse fazer as query no php resolvi refazer o banco
